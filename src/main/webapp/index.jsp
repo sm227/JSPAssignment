@@ -6823,10 +6823,10 @@
                                                                                                            name="mra"
                                                                                                            value=""
                                                                                                            disabled="disabled">
-                                <div class="search_input_box"><input id="query" name="query" type="search"
-                                                                     title="검색어를 입력해 주세요." placeholder="검색어를 입력해 주세요."
-                                                                     maxlength="255" autocomplete="off"
-                                                                     class="search_input" data-atcmp-element=""></div>
+                                <div class="search_input_box"><input id="query" name="query" type="text"
+                                                                     title="검색어를 입력해 주세요." placeholder=""
+                                                                     maxlength="255" value="22071065 함승민 웹서버 프로그래밍 과제"
+                                                                     class="search_input"></div>
                                 <button type="submit" class="btn_search"
                                         onclick="window.nclk_v2(this,&quot;sch.action&quot;)"><span id="search-btn"
                                                                                                     class="ico_btn_search"></span>
@@ -6989,11 +6989,7 @@
     <div id="container" role="main">
         <div id="root">
             <div class="Layout-module__column_left___tLO23">
-                <div class="Layout-module__banner_area___CUXNe" target="">
-                    <div id="ad_timeboard" style="height: 130px; z-index: 99;">
-                        <h1 style="font-size: 40px; text-align: center; margin-top: 60px">22071065 함승민 웹서버 프로그래밍 과제</h1>
-                    </div>
-                </div>
+
                 <div id="newsstand" class="Layout-module__content_area___b_3TU">
                     <div class="ContentHeaderView-module__content_header___nSgPg">
                         <div class="ContentHeaderView-module__header_tab___WW6fU">
@@ -7536,19 +7532,8 @@
                                     href="/register.jsp"
                                     class="MyView-module__link_login___HpHMW"><i
                                     class="MyView-module__naver_logo____Y442"><span
-                                    class="blind">NAVER</span></i>로그인</a>
-                                <div class="MyView-module__login_more___Qaa3P"><a
-                                        href="https://nid.naver.com/user2/api/route?m=routeIdInquiry"
-                                        class="MyView-module__link_more___sbxGh">아이디 찾기</a><a
-                                        href="https://nid.naver.com/user2/api/route?m=routePwInquiry"
-                                        class="MyView-module__link_more___sbxGh">비밀번호 찾기</a><a
-                                        href="https://nid.naver.com/nidregister.form?url=https%3A%2F%2Fwww.naver.com"
-                                        class="MyView-module__link_more___sbxGh">회원가입</a></div>
-                            </div>
-                        </div>
-                        <div class="Layout-module__banner_area___CUXNe" target="">
-                            <div id="pc-main-ad-div-p_main_rollingboard_v1" data-hide-last-sibling="false"
-                                 style="height: 240px;"></div>
+                                    class="blind">NAVER</span></i>회원가입</a>
+                                </div>
                         </div>
                         <div class="Layout-module__content_area___b_3TU">
                             <div class="DailyBoardView-module__daily_board_area___Q6Jmf">
