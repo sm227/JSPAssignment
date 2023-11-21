@@ -75,9 +75,6 @@
                                        class="input" value="" maxlength="100"/>
                             </div>
                         </div>
-                        <div class="error_text item_style" id="idMsg" style="display: none"></div>
-                        <div class="error_text item_style" id="pswd1Msg" style="display: none"></div>
-                        <div class="error_text item_style" id="emailMsg" style="display: none"></div>
 
                         <div class="form_list">
 

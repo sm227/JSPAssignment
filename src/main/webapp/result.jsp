@@ -20,7 +20,9 @@
     String  birthday = request.getParameter("birthdayInput");
     String telecom = request.getParameter("telecomMenu");
     String gender = request.getParameter("identityGender");
+    String foreigner = request.getParameter("foreigner");
     String phoneNum = request.getParameter("phoneNo");
+
 
     person.setId(id);
     person.setPswd(pswd);
@@ -29,7 +31,9 @@
     person.setBirthday(birthday);
     person.setTelecom(telecom);
     person.setGender(gender);
+    person.setForeigner(foreigner);
     person.setPhoneNum(phoneNum);
+
 
 
     Cookie cookieId = new Cookie("Id" , id);
@@ -39,6 +43,7 @@
     Cookie cookieBirthday= new Cookie("Birthday" , birthday);
     Cookie cookieTelecom= new Cookie("Telecom" , telecom);
     Cookie cookieGender= new Cookie("Gender" , gender);
+    Cookie cookieForeigner = new Cookie("Foreigner", foreigner);
     Cookie cookiePhoneNum= new Cookie("PhoneNumber" , phoneNum);
 
     response.addCookie(cookieId);
@@ -48,20 +53,24 @@
     response.addCookie(cookieBirthday);
     response.addCookie(cookieTelecom);
     response.addCookie(cookieGender);
+    response.addCookie(cookieForeigner);
     response.addCookie(cookiePhoneNum);
 
 %>
 <body>
-
-<h1>Id : <%= person.getId() %></h1>
-<h1>Password : <%= person.getPswd() %></h1>
-<h1>Email : <%= person.getEmail() %></h1>
-<h1>Name : <%= person.getName() %></h1>
-<h1>Birthday : <%= person.getBirthday() %></h1>
-<h1>Telecom : <%= person.getTelecom() %></h1>
-<h1>Gender : <%= person.getGender() %></h1>
-<h1>Phone Number : <%= person.getPhoneNum() %></h1>
-
+<div style="text-align: center">
+    <h1>회원가입 결과</h1>
+    <hr>
+    <h3>ID : <%= person.getId() %></h3>
+    <h3>Password : <%= person.getPswd() %></h3>
+    <h3>Email : <%= person.getEmail() %></h3>
+    <h3>Name : <%= person.getName() %></h3>
+    <h3>Birthday : <%= person.getBirthday() %></h3>
+    <h3>Telecom : <%= person.getTelecom() %></h3>
+    <h3>Gender : <%= person.getGender() %></h3>
+    <h3>Foreigner : <%=person.getForeigner()%></h3>
+    <h3>Phone Number : <%= person.getPhoneNum() %></h3>
+</div>
 </body>
 </html>
 </jsp:useBean>

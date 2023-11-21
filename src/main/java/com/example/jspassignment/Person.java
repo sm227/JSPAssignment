@@ -9,6 +9,7 @@ public class Person {
     private String  birthday;
     private String telecom;
     private String gender;
+    private String foreigner;
     private String phoneNum;
 
     public Person() {}
@@ -75,6 +76,14 @@ public class Person {
 
     public void setPhoneNum(String phoneNum) {
         this.phoneNum = phoneNum;
+    }
+
+    public String getForeigner() {
+        return foreigner;
+    }
+
+    public void setForeigner(String foreigner) {
+        this.foreigner = foreigner;
     }
 }
 
