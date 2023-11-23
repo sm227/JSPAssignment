@@ -12,6 +12,7 @@
 <head>
     <title>Title</title>
 </head>
+
 <%
     String id = request.getParameter("id");
     String pswd = request.getParameter("pswd1");
@@ -35,7 +36,7 @@
     person.setPhoneNum(phoneNum);
 
 
-
+    /*쿠키 생성 Start*/
     Cookie cookieId = new Cookie("Id" , id);
     Cookie cookiePass = new Cookie("Password" , pswd);
     Cookie cookieEmail = new Cookie("Email" , email);
@@ -55,7 +56,7 @@
     response.addCookie(cookieGender);
     response.addCookie(cookieForeigner);
     response.addCookie(cookiePhoneNum);
-
+    /* end */
 %>
 <body>
 <div style="text-align: center">

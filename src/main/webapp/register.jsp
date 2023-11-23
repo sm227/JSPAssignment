@@ -34,7 +34,7 @@
             </a>
         </h1>
         <div class="content">
-            <form id="join_form" method="get" action="/result.jsp" class="form">
+            <form id="join_form" method="get" action="./result.jsp" class="form">
 <%--                <input type="hidden" id="token_sjoin" name="token_sjoin" value="zHfDb0ha6PMdShC3">--%>
 <%--                <input type="hidden" id="nid_kb2" name="nid_kb2" value="">--%>
 <%--                <input type="hidden" id="joinMode" name="joinMode" value="joinIdentity">--%>
@@ -133,29 +133,11 @@
                                 </ul>
                             </div>
 
-                            <div class="form_item globe" id="divNationNo">
-                                <div class="select_box" id="selNationNo">
-                                    <select id="nationNo" name="nationNo" class="select">
-                                        <option value="82">
-                                            대한민국 +82
-                                        </option>
-                                    </select>
-                                </div>
-                            </div>
-
                             <div class="form_item phone" id="divPhoneNo">
                                 <input type="tel" id="phoneNo" name="phoneNo" placeholder="휴대전화번호" class="input"
                                        value="" maxlength="16"/>
                             </div>
                         </div>
-                        <div class="error_text item_style" id="nameMsg" style="display: none"></div>
-                        <div class="error_text item_style" id="birthdayMsg" style="display: none"></div>
-                        <div class="error_text item_style" id="telecomMsg" style="display: none"></div>
-                        <div class="error_text item_style" id="genderMsg" style="display: none"></div>
-                        <div class="error_text item_style" id="foreignerMsg" style="display: none"></div>
-                        <div class="error_text item_style" id="phoneNoMsg" style="display: none"></div>
-
-
                         <div class="error_text item_style" id="termAgreeMsg" style="display: none"></div>
 
                         <div class="form_list" id="divAuthNo6" style="display: none">

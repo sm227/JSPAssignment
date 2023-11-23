@@ -14,6 +14,7 @@ public class Person {
 
     public Person() {}
 
+    // Getter, Setter 영역
     public String getId() {
         return id;
     }
