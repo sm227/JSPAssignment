@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.net.URLEncoder" %><%--
   Created by IntelliJ IDEA.
   User: hamsm
   Date: 2023-11-20
@@ -12,8 +12,10 @@
 <head>
     <title>Title</title>
 </head>
-
+<%@ page import="java.net.URLEncoder" %>
 <%
+    request.setCharacterEncoding("utf-8");
+
     String id = request.getParameter("id");
     String pswd = request.getParameter("pswd1");
     String email = request.getParameter("email");
@@ -40,7 +42,9 @@
     Cookie cookieId = new Cookie("Id" , id);
     Cookie cookiePass = new Cookie("Password" , pswd);
     Cookie cookieEmail = new Cookie("Email" , email);
-    Cookie cookieName = new Cookie("Name" , name);
+
+    // Mac에서 한글로 쿠키 저장시 오류가 발생하여 UTF8 로 인코딩하여 저장함
+    Cookie cookieName = new Cookie("Name" , URLEncoder.encode(name,"UTF-8"));
     Cookie cookieBirthday= new Cookie("Birthday" , birthday);
     Cookie cookieTelecom= new Cookie("Telecom" , telecom);
     Cookie cookieGender= new Cookie("Gender" , gender);
